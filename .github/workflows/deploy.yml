@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     env: 
       PORT: 3535
-      MONGODB_USERNAME: super-mg-db
-      MONGODB_PASSWORD: 1oYAURFnQUPsW9Px
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       MONGODB_DB_NAME: testing_db
     steps:
       - name: Get Code
